@@ -1,6 +1,6 @@
 package org.factorypatter.dishes;
 
-public class ApplePie  extends Dish {
+public class ApplePie extends Dish {
 
     @Override
     public void smell() {
