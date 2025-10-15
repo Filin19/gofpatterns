@@ -1,8 +1,10 @@
-# Compiled class file
+### Java ###
 *.class
-
-# Log file
 *.log
+*.ctxt
+*.jar
+*.war
+*.ear
 
 # BlueJ files
 *.ctxt
@@ -10,15 +12,79 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# Package Files
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Local Gradle config
+gradle-app.setting
+.gradle/
+build/
+
+# Avoid ignoring Gradle wrapper scripts
+!gradlew
+!gradlew.bat
+!gradle-wrapper.properties
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Plugin-specific caches (Lombok, etc.)
+.idea_modules/
+.idea/*_index/
+.idea/*_dataSources/
+.idea/*_dataSources.xml
+.idea/*_dataSources.local.xml
+
+# JetBrains-specific files
+.idea/shelf/
+.idea/httpRequests/
+.idea/dictionaries/
+.idea/sonarlint/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/vcs.xml
+
+### Spring Boot ###
+# Exclude local environment variables
+*.env
+*.env.local
+application-*.yml
+application-*.properties
+
+# Include only base config (if needed)
+!application.yml
+!application.properties
+
+### Logs and temporary files ###
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+### System files ###
+.DS_Store
+Thumbs.db
+
+### Test reports ###
+test-output/
+reports/
+target/
+bin/
+
+# Other build directories (common in CI/CD)
+out/
+dist/
