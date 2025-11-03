@@ -1,9 +1,9 @@
-package org.factorypatter.client;
+package org.factorypatter.service;
 
 import org.factorypatter.dishes.Dish;
 import org.factorypatter.factory.DishesFactory;
 
-public class Oven {
+public class OvenService {
 
     public Dish bake(String ingredient) {
         return DishesFactory.choseDish(ingredient);
